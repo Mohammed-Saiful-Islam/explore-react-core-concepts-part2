@@ -1,0 +1,3 @@
+How to write an Effect ?
+2. Specify the Effect dependencies. Most Effects should only re-run when needed rather than after every render. For example, a fade-in-animation should only trigger when a component appears.
+3. Add cleanup if needed. Some Effects need to specify how to stop, undo, or clean up whatever they were doing. For examle, "connect" needs "disconnect".

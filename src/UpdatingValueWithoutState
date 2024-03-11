@@ -1,0 +1,6 @@
+Updating value without state
+Here's a component that renders a sculpture image. Clicking the "Next" button should show the next sculpture by changing the index to 1, then 2, and so on. However, this won't work.
+Updating value without state
+Example code of the previous slide: The handleClick event handler is updating a local variable, index. But two things prevent that change from being visible:
+Local variable don't persist btween renders. When React renders this component a second time, it renders it from scratch.
+Changes to local variables won't trigger renders. React doesn't realize ti needs to render the component again with the new data.

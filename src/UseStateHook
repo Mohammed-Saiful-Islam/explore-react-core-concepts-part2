@@ -1,0 +1,39 @@
+How to write a useState Hook?
+The useState Hook provides those two things:
+A state variable to retain the data between renders.
+A state setter function to update the variable and trigger React to render the component again.
+What are react hooks?
+Hooks were first introduced in React 16.8. Hooks let you use different React features from your components. You can either use the built-in Hooks or combine then to build your own.
+Rules of Hooks
+AAA. Only call React Hooks in React Functions
+1. React component Functions
+2. Custom Hooks (converted later!)
+BBB. Only call React Hooks at the Top Level
+1. Don't call them in nested functions
+2. Don't call them in any block statements
++++ extra, unofficial Rule for useEffect(): ALWAYS add everything you refer to inside of useEffect() as a dependency!
+Different Types
+1. State hooks
+2. Context hooks
+3. Ref hooks
+4. Effect hooks
+5. Performance hooks
+6. Others
+
+State hooks
+State lets a component "remember" information like user input.
+To add state to a component, use one of these Hooks:
+useState declares a state variable that you can update directly
+usReducer declares a state variable with the update logic insice a reducer function
+
+Context hooks
+Context lets a component receive information from distant parents without passing it as props
+useContext reads and subscribes to a context
+
+Ref hooks 
+Refs let a component hold some information that isn't used for rendering, like a DOM node or a timeout ID.
+useRef declares a ref. You can hold any value in it, but most often it's used to hold a DOM node.
+
+Effect hooks
+Effects let a component connect to and synchronize with external systems. This includes dealing with network, browser DOM, animations, widgets written using a different UI library, and other non-React code.
+useEffect connects a component to an external system.

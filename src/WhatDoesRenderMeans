@@ -1,0 +1,3 @@
+What does Render means?
+Before your components are displayed on screen, they must be rendered by React.
+"Rendering" means that React is calling your component, which is a function.

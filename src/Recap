@@ -1,0 +1,7 @@
+1. You can handle events by passing a function as a prop to an element like <button>.
+2. Event handlers must be passed, not called! onClick={handleClick}, not onClick={handleClick()}.
+3. You can define an event handler function separately or inline.
+4. Event handlers are defined inside a componet, so they can access props.
+5. You can declare an event handler in a parent and pass it as a prop to a child.
+6. You can define your own event handler props with application-specific names.
+7. Explicitly calling an event handler prop from a child handler is good alternative to propagate.

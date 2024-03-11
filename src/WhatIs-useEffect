@@ -1,0 +1,14 @@
+What id useEffect?
+useEffect exists
+To syncyronize a component with an exernal system.
+To provide a way to handle performing these side effects
+Doesn't affect the rendering or performance of the component that it's in
+Performs asynchronous tasks
+
+useEffect()=>{_},[dependencies];
+
+A function that should be executed AFTER every component evaluation IF the specified dependencies changed
+Year side effect code goes into this function
+
+Dependencies of this effect - file function only runs if the dependencies changed
+Specify your dependencies of your function here

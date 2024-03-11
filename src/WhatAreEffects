@@ -1,0 +1,9 @@
+What are Effects?
+There are two types of logic inside React components:
+Rendering code: lives at the top level of your component. This is where you take the props and state, transform them, and return, the JSX you want to see on the screen.
+Event handlers: An event handler might update an input field, submit an HTTP POST request to buy a probuct, or navigate the user to another screen.
+Event handlers contain "side effects" (they change the program's state) caused by a specific user action (for example, a button click or typing).
+What are Effects?
+Consider a ChatRoom component that must connect to the chat server whenever it's visible on the screen.
+Sending a message in the chat is an event because it is directly caused by the user clicking a specific button.
+However, setting up a server connection is an Effect because it should happen no matter which interaction caused the component to appear.

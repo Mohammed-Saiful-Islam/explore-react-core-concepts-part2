@@ -1,0 +1,31 @@
+What is the useEffect cleanup function
+
+let's look at this scenario 
+
+Imagine the ChatRoom component is a part of a larger app with many different screens.
+The user starts their journey on the ChatRoom page. 
+The component mounts, i.e. "appears on the screen for the first time" and calls connection.connect().
+
+Then imagine the user navigate to another screen-for example, to the Settings page. 
+The ChatRoom component inmounts.
+
+Finally, the user clicks Back and ChatRoom mounts again. This would set up a second connection-but the first connection was never destroyed!
+As the user navigate the app, the connections would keep piling up.
+
+What is the useEffect cleanup function?
+
+ The useEffect cleanup allowes us to tidy up our code before our component unmounts.
+ 
+ When our code runs and reruns for every render, useEffect also cleans up after itself using the cleanup function.
+
+ The cleanup function prevents memory leaks and removes some unnecessary and unwanted behaviors.
+
+ prevent unwanted behavior and optimizes applcation performance.
+
+ When should we use the useEffect cleanup?
+
+ if our component unmounts before our promise resolves, useEffect will try to update the state (on an unmounted component) and  send an error that looks like this:
+
+ x Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it index.js:27 indicates a memory lead in your application. To fix, cancell all subscriptions and asynchronous tasks in a useEffect cleanup function.
+
+ To fix this error, we use the cleanup function to resolve it.

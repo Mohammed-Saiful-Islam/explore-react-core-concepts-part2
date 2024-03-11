@@ -1,0 +1,11 @@
+What are side effects in react?
+1. Not predictable
+2. Actions which are performed with the "outside world"
+3. A side effect is performed when we need to reach outside the scope of our current react components to do something.
+4. React component rendering and side-effect logic are independent
+
+Some common side effects
+1. Making a request to an API  for data from a backend server
+2. To interact with browser APIs (that is, to use document or window directly) / Maninpulating DOM directly
+3. Using unpredictable timing functions like setTimeout() or setInterval()
+4. Reading data from local storage
